@@ -1,0 +1,362 @@
+/**
+ * Colors
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+/**
+ * These are default block editor widths in case the theme doesn't provide them.
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+:root {
+  --wp-admin-theme-color: #007cba;
+  --wp-admin-theme-color-darker-10: #006ba1;
+  --wp-admin-theme-color-darker-20: #005a87;
+}
+
+/* Color Options
+--------------------------------------------- */
+.has-black-color {
+  color: #1d1916 !important;
+}
+
+.has-black-background-color {
+  background-color: #1d1916 !important;
+}
+
+.has-black-backgroundColor {
+  background-color: #1d1916 !important;
+}
+
+.has-white-color {
+  color: #ffffff !important;
+}
+
+.has-white-background-color {
+  background-color: #ffffff !important;
+}
+
+.has-white-backgroundColor {
+  background-color: #ffffff !important;
+}
+
+.has-gray-color {
+  color: #878482 !important;
+}
+
+.has-gray-background-color {
+  background-color: #878482 !important;
+}
+
+.has-gray-backgroundColor {
+  background-color: #878482 !important;
+}
+
+.has-gray-light-color {
+  color: #ece7e3 !important;
+}
+
+.has-gray-light-background-color {
+  background-color: #ece7e3 !important;
+}
+
+.has-gray-light-backgroundColor {
+  background-color: #ece7e3 !important;
+}
+
+.has-orange-color {
+  color: #fc5811 !important;
+}
+
+.has-orange-background-color {
+  background-color: #fc5811 !important;
+}
+
+.has-orange-backgroundColor {
+  background-color: #fc5811 !important;
+}
+
+.has-bg-color {
+  color: #f9f4f0 !important;
+}
+
+.has-bg-background-color {
+  background-color: #f9f4f0 !important;
+}
+
+.has-bg-backgroundColor {
+  background-color: #f9f4f0 !important;
+}
+
+.has-bg-light-color {
+  color: #fcfaf8 !important;
+}
+
+.has-bg-light-background-color {
+  background-color: #fcfaf8 !important;
+}
+
+.has-bg-light-backgroundColor {
+  background-color: #fcfaf8 !important;
+}
+
+.has-bg-dark-color {
+  color: #f4eae1 !important;
+}
+
+.has-bg-dark-background-color {
+  background-color: #f4eae1 !important;
+}
+
+.has-bg-dark-backgroundColor {
+  background-color: #f4eae1 !important;
+}
+
+.wp-block-lilo-blocks-cta {
+  display: flex;
+}
+.wp-block-lilo-blocks-cta .block-editor-block-list__layout {
+  display: flex;
+}
+.wp-block-lilo-blocks-cta .block-editor-block-list__layout .block-editor-block-list__block:not(:last-child) {
+  margin-right: 1rem;
+}
+.wp-block-lilo-blocks-cta .wp-block-lilo-blocks-cta-button {
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+}
+.wp-block-lilo-blocks-cta .wp-block-lilo-blocks-cta-button .block-editor-rich-text__editable.rich-text {
+  display: inline;
+}
+.wp-block-lilo-blocks-cta .wp-block-lilo-blocks-cta-button:not(:last-child) {
+  margin-right: 1rem;
+}
+.wp-block-lilo-blocks-cta .wp-block-lilo-blocks-cta-button.is-style-primary {
+  color: #ffffff;
+  background-color: #fc5811;
+  border: 1px solid #fc5811;
+}
+.wp-block-lilo-blocks-cta .wp-block-lilo-blocks-cta-button.is-style-primary:hover {
+  color: #fc5811;
+  background-color: transparent;
+}
+.wp-block-lilo-blocks-cta .wp-block-lilo-blocks-cta-button.is-style-secondary {
+  color: #1d1916;
+  background-color: transparent;
+  border: 1px solid #1d1916;
+}
+.wp-block-lilo-blocks-cta .wp-block-lilo-blocks-cta-button.is-style-secondary:hover {
+  color: #ffffff;
+  background-color: #1d1916;
+}
+
+.home_banner .home_banner__left .wp-block-group {
+  max-width: 450px;
+}
+.home_banner .home_banner__right {
+  flex: 0 0 auto;
+}
+.home_banner .home_banner__right .wp-block-lilo-blocks-intro-video {
+  position: relative;
+}
+.home_banner .home_banner__right .wp-block-lilo-blocks-intro-video img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.home_banner .home_banner__right .wp-block-lilo-blocks-intro-video video {
+  position: absolute;
+  top: 28px;
+  left: 170px;
+}
+@media (max-width: 1080px) {
+  .home_banner .home_banner__right {
+    transform: scale(0.75);
+    margin-right: -8rem;
+  }
+}
+@media (max-width: 840px) {
+  .home_banner .home_banner__right {
+    display: none;
+  }
+}
+
+.wp-block-lilo-blocks-stats-card {
+  padding: 3rem !important;
+  border-radius: 4px !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.wp-block-lilo-blocks-stats-card__title {
+  font-size: 6.4rem !important;
+  letter-spacing: -2px !important;
+  font-weight: 300 !important;
+}
+.wp-block-lilo-blocks-stats-card__description {
+  margin-bottom: 3rem !important;
+}
+@media (max-width: 768px) {
+  .wp-block-lilo-blocks-stats-card__description {
+    margin-bottom: 1.5rem !important;
+  }
+}
+.wp-block-lilo-blocks-stats-card__image img {
+  margin-left: -1rem !important;
+  margin-bottom: -1rem !important;
+  width: 125px !important;
+  height: auto !important;
+}
+
+.wp-block-lilo-blocks-partners .wp-block-columns {
+  margin-bottom: 0;
+}
+.wp-block-lilo-blocks-partners .wp-block-columns .wp-block-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .wp-block-lilo-blocks-partners .wp-block-columns .wp-block-column:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+.wp-block-lilo-blocks-partners__image {
+  margin-bottom: 0 !important;
+  max-width: 200px;
+}
+.wp-block-lilo-blocks-partners__image img {
+  height: auto;
+}
+
+.wp-block-lilo-blocks-full-bg__inner {
+  position: relative;
+  min-height: 650px;
+}
+.wp-block-lilo-blocks-full-bg__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.wp-block-lilo-blocks-full-bg__image img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .wp-block-lilo-blocks-full-bg__image {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .wp-block-lilo-blocks-full-bg__image--mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .wp-block-lilo-blocks-full-bg__image--mobile {
+    display: block;
+    position: static;
+  }
+}
+.wp-block-lilo-blocks-full-bg .wp-block-columns {
+  position: relative;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 57.5%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 47.5%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+/*# sourceMappingURL=editor.css.map*/

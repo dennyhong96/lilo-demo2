@@ -1,0 +1,36 @@
+$height-navbar: 104px;
+$height-navbar-scrolled: 56px;
+
+$color-black: #1d1916;
+$color-white: #ffffff;
+$color-gray: #878482;
+$color-gray-light: #ece7e3;
+$color-orange: #fc5811;
+$color-bg: #f9f4f0;
+$color-bg-light: #fcfaf8;
+$color-bg-dark: #f4eae1;
+
+$zIndex-navbar: 25;
+
+// Gutenberg color options
+// -- see editor-color-palette in functions.php
+$colors: (black, #1d1916), (white, #ffffff), (gray, #878482),
+	(gray-light, #ece7e3), (orange, #fc5811), (bg, #f9f4f0), (bg-light, #fcfaf8),
+	(bg-dark, #f4eae1);
+
+/* Color Options
+--------------------------------------------- */
+@each $name, $color in $colors {
+	.has-#{$name}-color {
+		color: $color !important;
+	}
+
+	.has-#{$name}-background-color {
+		background-color: $color !important;
+	}
+
+	// Editor
+	.has-#{$name}-backgroundColor {
+		background-color: $color !important;
+	}
+}

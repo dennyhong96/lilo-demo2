@@ -1,0 +1,42 @@
+// Gutenberg base styles
+@import "~@wordpress/base-styles/colors";
+@import "~@wordpress/base-styles/variables";
+@import "~@wordpress/base-styles/mixins";
+@import "~@wordpress/base-styles/breakpoints";
+@import "~@wordpress/base-styles/animations";
+@import "~@wordpress/base-styles/z-index";
+@import "~@wordpress/base-styles/default-custom-properties";
+
+@import "config/variables";
+@import "config/button";
+
+@import "components/homeBanner";
+@import "components/statsCard";
+@import "components/partners";
+@import "components/bigBg";
+
+html {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+
+	// 10px / 16px = 62.5% : 1rem = 10px
+	font-size: 62.5%;
+	@media (max-width: 992px) {
+		font-size: 57.5%;
+	}
+	@media (max-width: 768px) {
+		font-size: 52.5%;
+	}
+	@media (max-width: 576px) {
+		font-size: 47.5%;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 !important;
+}
